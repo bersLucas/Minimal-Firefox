@@ -3,6 +3,7 @@ Minimal-Firefox
 
 A firefox.css theme for Firefox 29
 
+<img src="http://puu.sh/81dIn.jpg"/>
 
 Installation instructions:
 ================

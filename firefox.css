@@ -16,7 +16,7 @@
     -moz-appearance: -moz-win-glass;
 }
 #main-window[sizemode="normal"]{
-    margin-top: -5px !important;
+    margin-top: -4px !important;
 }
 #main-window[sizemode="normal"] > #titlebar { margin-top: -15px !important;}
 #main-window[sizemode="maximized"] > #titlebar {
@@ -69,6 +69,9 @@ select > input {
   margin-bottom: 1px !important;
   height: 20px !important;
 }
+
+#main-window[sizemode="normal"] #TabsToolbar {  margin-bottom: 0px !important;}
+
 .tabbrowser-tab:active {
     border-radius: 0px !important;
 }

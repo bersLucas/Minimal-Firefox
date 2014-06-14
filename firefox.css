@@ -192,28 +192,38 @@ window:not([chromehidden~="toolbar"]) #urlbar-container[forwarddisabled] > #urlb
   border: 0 !important;
 }
 
-#browser {  }
 #navigator-toolbox {
   margin-bottom: -1px !important; 
 }
 
 /* url bar container */
 #omnibar-defaultEngineName {
-    margin: 6px 5px!important;
+    margin-top: 6px !important;
+    margin-right: 5px !important;
     font-size: 0.8em;
     font-style: italic;
 }
 
+textbox#urlbar {
+    padding: 0px !important;
+    margin: 0px !important;
+    margin-top: 0px !important;
+    border-radius: 5px !important;
+   box-shadow: 0px 1px 0px rgba(255,255,255,0.5) !important;
+}
+
 #urlbar-wrapper {
-    padding-top: 2.5px;
-    height: 50px;
+    padding-top: 0px;
+    margin-top: -7px !important;
+    height: 24px;
+
 }
 #urlbar-reload-button {
     margin-top: 3px !important;
 }
 #nav-bar {
   border-radius: 0 !important;
-  height: 35px !important;
+  height: 30px !important;
   background: #f7f7f8 !important;
   -moz-appearance: none !important;
   border-right: none !important;
@@ -354,12 +364,41 @@ toolbarbutton {
 
 .tabs-newtab-button:hover .toolbarbutton-icon,
 .tabs-newtab-button:active .toolbarbutton-icon {
-    list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH3QgJAhkOUDDxawAAACdJREFUOMtjYBje4D8U4FPDRKklA28AI7qfidLEyMhINReMxsKwAACAUhQA+0tI1AAAAABJRU5ErkJggg==) !important;
+
     -moz-image-region: rect(0,16px,16px,0) !important;
     transition: all 0.2s ease 0s;
 }
 
-#back-button { margin-top: -5px !important; margin-left:0px !important; height: 30px; width: 25px !important;}
+#back-button { 
+    margin-top: -3px !important; 
+    margin-left:0px !important; 
+    height: 30px !important; 
+    width: 25px !important;
+    border-radius: 0px !important;
+}
+
+  #back-button > .toolbarbutton-icon, #back-button:not([disabled="true"]):not([open="true"]):not(:active):hover > .toolbarbutton-icon,   #back-button:not([disabled="true"]):hover:active > .toolbarbutton-icon, #back-button[open="true"] > .toolbarbutton-icon, #main-window:not([customizing]) #back-button[disabled] > .toolbarbutton-icon, #nav-bar .toolbarbutton-1 > .toolbarbutton-icon,
+  #nav-bar .toolbarbutton-1 > .toolbarbutton-text,
+  #nav-bar .toolbarbutton-1 > .toolbarbutton-badge-container,
+  #nav-bar .toolbarbutton-1 > .toolbarbutton-menubutton-button > .toolbarbutton-icon,
+  #nav-bar .toolbarbutton-1 > .toolbarbutton-menubutton-dropmarker > .dropmarker-icon {
+      background: transparent !important;
+      border: none !important;
+      box-shadow: none !important;
+      border-color: transparent !important;
+  }
+
+  #nav-bar .toolbarbutton-1:not([disabled=true]) > .toolbarbutton-menubutton-button[open] + .toolbarbutton-menubutton-dropmarker > .dropmarker-icon,
+  #nav-bar .toolbarbutton-1:not([disabled]):-moz-any(:hover,[open]) > .toolbarbutton-menubutton-button > .toolbarbutton-icon,
+  #nav-bar .toolbarbutton-1:not([disabled]):hover > .toolbarbutton-menubutton-dropmarker > .dropmarker-icon,
+  #nav-bar .toolbarbutton-1:not([disabled]):not([checked]):not([open]):not(:active):hover > .toolbarbutton-icon,
+  #nav-bar .toolbarbutton-1:not([disabled]):not([checked]):not([open]):not(:active):hover > .toolbarbutton-text,
+  #nav-bar .toolbarbutton-1:not([disabled]):not([checked]):not([open]):not(:active):hover > .toolbarbutton-badge-container,
+  window:not([chromehidden~="toolbar"]) #urlbar-wrapper > .toolbarbutton-1:-moz-any([disabled],:not([open]):not([disabled]):not(:active)) > .toolbarbutton-icon { 
+      background-color: transparent !important;
+      box-shadow: none !important;
+      border: none !important;
+  }
 #back-button .toolbarbutton-icon {
     list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH3QcOFy0m28VklQAAAMZJREFUOMvd0T1KA1EYheEnmj2ICVFQCaS3DSSmcA0WF7dwFzDlXcD0llOmiBuQKW1Mo6JL8KdxBYLNLQTHSaYS/OpzXj7ew19fb1OgKKs9LDFNMfzI9zeU93GDCZ6bMjst5SPc5vIj5lsDirI6Ro1D3GORYnjbClCU1UkuH+AOsxTD+2+fNn1whRE+cZli+Gjz1AS4wBN2sSrKatAJkGJ4xVkWN0bdBmmUmIUt8PANMuw0YxZ3nvcf47oTIENe8v5rnPqf9wUzkTMMOOq3ogAAAABJRU5ErkJggg==) !important;
     -moz-image-region: rect(0,16px,16px,0)!important;
@@ -377,8 +416,14 @@ toolbarbutton {
     transition: all 0.2s ease 0s;
 }
 #forward-button {
+    -moz-box-align: start !important;
+    display: block !important;
     margin-left: -4px !important;
-    margin-top: -5px !important;
+    margin-top: 4px !important;
+    margin-left: -10px !important; 
+    height: 23px !important; 
+    width: 25px !important;
+    border-radius: 0px !important;
 }
 #forward-button .toolbarbutton-icon {
     list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH3QcOFy4pYFcqxwAAAMxJREFUOMvd0jFKQ0EYxPFfPIWB2BkUWxsbIUQQe+v1DHuAV7xiD7AHsNvWMxhJIYiFIiiCdoqgjZYWFjavkGCeeTaCUw7Mn+Gbj79W7zuzyuUdF9hPMTy1AZbm+LfYwkmVy+A3gF1cYYjTKpfVToAUwwtGOMcKJlUuwy4NpBhemyZnGGBa5bKxMKCBvOEAH1jGYV3XvR9X+LJGH8dYxz3GKYaHhRrMhG+wPRtu+4M+JljDNXZSDM9djnjUhO+wNy/cBtjEJUYphkf/W59X/DjuQnsxTQAAAABJRU5ErkJggg==) !important;
@@ -481,7 +526,8 @@ toolbarbutton {
     opacity: 1.0 !important;
 }
 #bookmarks-menu-button{
-    margin-top: -3px !important;
+    margin-top: -4px !important;
+    margin-left: -5px !important;
 }
 #bookmarks-button .toolbarbutton-icon {
     list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAV1BMVEV0h5l8kKN6jqB8kKN8kKN8kKN6jqB0h5l8kKN8kKN3ipx3ipx5jJ92iZt8kKN2ipx8kKN2ipx8kKN8kKN1iJp8kKN1iJp8kKN8kKN8kKMAAAB7j6J8kKP+CkikAAAAG3RSTlPsia0QiA+s65iXzcy42DjRg9ATNN4N3QFMWgBqox/DAAAAX0lEQVR42n3P2wqAIAyAYTufPKeW0/d/zqLVwKD+u32wwVh+9Qnz8oJ9L8FtmysgAkSCMa4ezvwapwuChTsbcEU0OHfiuaEQFB1lCAMBR+AELUhjJFQEuk45p17/PkcdysYZkV4wb2cAAAAASUVORK5CYII=) !important;

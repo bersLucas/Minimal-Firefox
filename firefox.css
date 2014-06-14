@@ -370,8 +370,8 @@ toolbarbutton {
 }
 
 #back-button { 
-    margin-top: -3px !important; 
-    margin-left:0px !important; 
+    margin-top: -4px !important; 
+    margin-left: -5px !important; 
     height: 30px !important; 
     width: 25px !important;
     border-radius: 0px !important;
@@ -419,7 +419,7 @@ toolbarbutton {
     -moz-box-align: start !important;
     display: block !important;
     margin-left: -4px !important;
-    margin-top: 4px !important;
+    margin-top: 3px !important;
     margin-left: -10px !important; 
     height: 23px !important; 
     width: 25px !important;

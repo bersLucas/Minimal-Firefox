@@ -5,13 +5,14 @@
     background-image:none !Important;
 }
 #main-window[sizemode="normal"] #navigator-toolbox { 
-    margin-top: 2px !important; 
+    margin-top: -1px !important; 
     margin-left:  1px !important; 
     margin-right: 1px !important;
+  padding-top: 5px !important;
 }
-  
+
 #main-window{
-    padding-top: 0px !important;
+    padding-top: 3px !important;
     background: transparent;
     -moz-appearance: -moz-win-glass;
 }
@@ -24,6 +25,7 @@
     background: transparent !important;
     margin-left: -1px !important; padding-left: 0px !important;
 }
+
 #TabsToolbar .tabbrowser-tab[selected], .tabbrowser-tab[selected="true"]  {
     border: 0px !important;
     margin-top: 0px !important;
@@ -32,6 +34,15 @@
     background: transparent !important;
     box-shadow: 0px 0px 6px rgba(0,0,0,0,0.1) !important;
 }
+
+.tabs-newtab-button { width: 38px !important; background: #dcdcdc !important; margin-top: -6px !important; margin-left: -0px !important; opacity: 0.3 !important; transition: all 200ms ease-in-out;}
+
+/* new tab button border and gradient on hover */
+.tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected=true]),
+.tabs-newtab-button:hover {
+    opacity: 1.0 !important;
+}
+
 window[selectedSkin="classic/1.0"] #appmenu-container #appmenu-button {
     -moz-border-top-colors: transparent;
     border: 0px none;
@@ -71,6 +82,7 @@ select > input {
 }
 
 #main-window[sizemode="normal"] #TabsToolbar {  margin-bottom: 0px !important;}
+#main-window[sizemode="maximized"] #TabsToolbar {  padding-top: 2px !important; margin-bottom: -2px !important;}
 
 .tabbrowser-tab:active {
     border-radius: 0px !important;
@@ -84,22 +96,14 @@ select > input {
   box-shadow: none !important;
 }
 
-
-
 #main-window .tabbrowser-tab:last-of-type .tab-stack {
   border-top-right-radius: 0px !important;
 }
-#TabsToolbar > #new-tab-button{
-    margin-left: -20px !important;
-}
- #new-tab-button {
-     left: 0px;
-     margin-left: 10px !important;
- }
+
 tab {
   font-family: Source Sans Pro !important;
   text-align: left !important;
-  font-size: 1em;
+
 }
 #tabbrowser-tabs {
     min-height: 35px !important;
@@ -138,14 +142,13 @@ tab {
   border-left-color: rgba(71,79,115,.20) !important;
   background-clip: padding-box !important;
   border-radius: 0px;
-  padding: 0 2px !important;
-  margin-top: 3px !important;
-  margin-left: -1px !important;
+  padding: 0 0px !important;
+  margin-top: -7px !important;
+  margin-left: -2px !important;
   box-shadow: 0px -1px 0px rgba(20,23,26,.04),
               0px  1px 0px rgba(255,255,255,.25) inset,
               1px  0px 0px rgba(255,255,255,.15) inset,
              -1px  0px 0px rgba(255,255,255,.15) inset !important;
-
 }
 
 #main-window .tabbrowser-tab:last-of-type > .tab-stack {
@@ -158,6 +161,9 @@ tab {
   color: #666 !important;
 }
 
+#tabbrowser-tabs[movingtab] > .tabbrowser-tab[beforeselected]:not([last-visible-tab]):after, .tabbrowser-tab:not([selected]):not([afterselected-visible]):not([afterhovered]):not([first-visible-tab]):not(:hover):before, #tabbrowser-tabs:not([overflow]) > .tabbrowser-tab[last-visible-tab]:not([selected]):not([beforehovered]):not(:hover):after {
+    background-image:none !important;
+}
 
 /* Tab Hover */
 
@@ -168,11 +174,13 @@ tab {
 /* Selected Tab */
 #main-window .tabbrowser-tab[selected] .tab-stack, tab[selected="true"], tabbrowser-tabs[selected="true"] {
   background-color: #f7f7f8 !important;
-  box-shadow: none !important;
   color: #444 !important;
     border-color: #f7f7f8 !important;
 }
 
+.tabbrowser-tab[selected="true"] {
+    z-index: 1 !important;
+}
 /* Pinned tab titlechange */
 
 .tabbrowser-tab[titlechanged] .tab-icon-image {
@@ -193,12 +201,12 @@ window:not([chromehidden~="toolbar"]) #urlbar-container[forwarddisabled] > #urlb
 }
 
 #navigator-toolbox {
-  margin-bottom: -1px !important; 
+  margin-bottom: 0px !important; 
 }
 
 /* url bar container */
 #omnibar-defaultEngineName {
-    margin-top: 6px !important;
+    margin-top: 0px !important;
     margin-right: 5px !important;
     font-size: 0.8em;
     font-style: italic;
@@ -229,7 +237,7 @@ textbox#urlbar {
   border-right: none !important;
   border-left: none !important;
   padding: 0px 2px !important;
-  margin-top: 0px !important;
+  margin-top: -6px !important;
   margin-left: 0px !important;
   margin-right: 0px !important;
   margin-bottom: -1px !important;
@@ -238,7 +246,7 @@ textbox#urlbar {
 }
 
 #main-window[sizemode=maximized] #nav-bar {
-  margin-top: -1px !important;
+  margin-top: -6px !important;
 }
 
 /* "combines" stop and reload button */

@@ -5,7 +5,7 @@
     background-image:none !Important;
 }
 #main-window[sizemode="normal"] #navigator-toolbox { 
-    margin-top: -1px !important; 
+    margin-top: -2px !important; 
     margin-left:  1px !important; 
     margin-right: 1px !important;
   padding-top: 5px !important;
@@ -103,10 +103,11 @@ select > input {
 tab {
   font-family: Source Sans Pro !important;
   text-align: left !important;
+  font-size: 11px !important;
 
 }
 #tabbrowser-tabs {
-    min-height: 35px !important;
+    min-height: 33px !important;
 }
 .tab-background-end[selected=true]:-moz-locale-dir(ltr):not(:-moz-lwtheme)::before,
 .tab-background-start[selected=true]:-moz-locale-dir(rtl):not(:-moz-lwtheme)::before, .tab-background-start[selected=true]:-moz-locale-dir(ltr):not(:-moz-lwtheme)::before,
@@ -121,9 +122,6 @@ tab {
   background-size: 100% 100%;
 }
 
-#tabbrowser-tab[selected="true"] {
-    font-size: 10px !important;
-}
 #main-window #tabbrowser-tabs tab[fadein]:not([pinned]):first-of-type .tab-stack,
 #main-window #tabbrowser-tabs tab[pinned]:first-of-type .tab-stack {
   margin-left: -16px !important;
@@ -143,12 +141,8 @@ tab {
   background-clip: padding-box !important;
   border-radius: 0px;
   padding: 0 0px !important;
-  margin-top: -7px !important;
+  margin-top: -8px !important;
   margin-left: -2px !important;
-  box-shadow: 0px -1px 0px rgba(20,23,26,.04),
-              0px  1px 0px rgba(255,255,255,.25) inset,
-              1px  0px 0px rgba(255,255,255,.15) inset,
-             -1px  0px 0px rgba(255,255,255,.15) inset !important;
 }
 
 #main-window .tabbrowser-tab:last-of-type > .tab-stack {
@@ -173,7 +167,7 @@ tab {
 
 /* Selected Tab */
 #main-window .tabbrowser-tab[selected] .tab-stack, tab[selected="true"], tabbrowser-tabs[selected="true"] {
-  background-color: #f7f7f8 !important;
+  background-color: #f0f0f0 !important;
   color: #444 !important;
     border-color: #f7f7f8 !important;
 }
@@ -208,15 +202,13 @@ window:not([chromehidden~="toolbar"]) #urlbar-container[forwarddisabled] > #urlb
 #omnibar-defaultEngineName {
     margin-top: 0px !important;
     margin-right: 5px !important;
-    font-size: 0.8em;
-    font-style: italic;
+  color: #c2c2c2 !important;
 }
 
 textbox#urlbar {
     padding: 0px !important;
     margin: 0px !important;
     margin-top: 0px !important;
-    border-radius: 5px !important;
    box-shadow: 0px 1px 0px rgba(255,255,255,0.5) !important;
 }
 
@@ -232,7 +224,7 @@ textbox#urlbar {
 #nav-bar {
   border-radius: 0 !important;
   height: 30px !important;
-  background: #f7f7f8 !important;
+  background: #f0f0f0 !important;
   -moz-appearance: none !important;
   border-right: none !important;
   border-left: none !important;
@@ -263,12 +255,12 @@ toolbarbutton {
 
 #urlbar {
   color: rgb(98,98,98) !important;
-  border-radius: 20px !important;
   background: white !important;
   height: 26px !important;
-  font-family:"Segoe UI", sans-serif !important;
-  font-size: 10pt !important;
+  font-family: source sans pro !important;
+  font-size: 11px !important;
   border: 1px solid #dcdcdc !important;
+  border-radius: 0px !important;
   box-shadow: 0px 1px 0px rgba(255,255,255,0.25) !important;
   margin: -17px -10px -10px 0px !important;
   padding: 0 0 2px 5px !important;
@@ -277,8 +269,8 @@ toolbarbutton {
 }
 
 #urlbar-container {
-  background: #f7f7f8!important;
-  padding-top:2px!important;
+  background: #f0f0f0 !important;
+  padding-top:3px!important;
 }
 
 /* URL bar drop down */
@@ -457,7 +449,7 @@ toolbarbutton {
 
 /* The hover state for the downloads button doesn't work! Neither does the notification icon */
 #PanelUI-menu-button {
-    padding: 4px !important;
+    padding: 4px 0px 3px 0px !important;
 }
 #PanelUI-button{background-image: none !important;}
 #downloads-indicator:hover #downloads-indicator-anchor {
@@ -528,26 +520,12 @@ toolbarbutton {
     -moz-image-region: rect(0,16px,16px,0)!important;
 }
 
-#home-button:hover .toolbarbutton-icon {
-    list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAPCAMAAADjyg5GAAAATlBMVEU7S1s8TFw8TFw8TFw8TFw8TFw4R1Y8TFw8TFw6SVk8TFw4R1Y5SVg8TFw8TFw8TFw8TFw8TFw8TFw8TFw8TFwAAAA5SFc4R1Y7S1s8TFwQbC15AAAAFnRSTlOmnXdxTEjpBSvDE+vGligEEpU/Mw8AQxGXrgAAAEtJREFUeNqlx0kWgCAQQ8F2nkWBKLn/RZVWHy7c+TdJCWJmnRo9yqUjx/7hXPNsaC9WO7WtjCwC70IOyfhKRCfZ2QTrBD7R45vAfx6mWhIb4vPofAAAAABJRU5ErkJggg==) !important;
-    -moz-image-region: rect(0,16px,16px,0)!important;
-    opacity: 1.0 !important;
-}
+
 #bookmarks-menu-button{
     margin-top: -4px !important;
     margin-left: -5px !important;
 }
-#bookmarks-button .toolbarbutton-icon {
-    list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAV1BMVEV0h5l8kKN6jqB8kKN8kKN8kKN6jqB0h5l8kKN8kKN3ipx3ipx5jJ92iZt8kKN2ipx8kKN2ipx8kKN8kKN1iJp8kKN1iJp8kKN8kKN8kKMAAAB7j6J8kKP+CkikAAAAG3RSTlPsia0QiA+s65iXzcy42DjRg9ATNN4N3QFMWgBqox/DAAAAX0lEQVR42n3P2wqAIAyAYTufPKeW0/d/zqLVwKD+u32wwVh+9Qnz8oJ9L8FtmysgAkSCMa4ezvwapwuChTsbcEU0OHfiuaEQFB1lCAMBR+AELUhjJFQEuk45p17/PkcdysYZkV4wb2cAAAAASUVORK5CYII=) !important;
-    -moz-image-region: rect(0,16px,16px,0)!important;
-    opacity: 1.0 !important;
-}
 
-#bookmarks-button:hover .toolbarbutton-icon {
-    list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAV1BMVEU7Slo8TFw4R1Y8TFw8TFw8TFw4R1Y7S1o8TFw8TFw5SVg5SVg5SFc8TFw6Slk5SFg8TFw5SFg8TFw5SFc8TFw8TFw5SFc8TFw8TFw8TFwAAAA7S1s8TFwOeUCpAAAAG3RSTlOtiOyJEA/rrJiXzM3YOLjRg9AT3jQN3QFMWgAM3HECAAAAX0lEQVR42n3P2wqAIAyAYTufPKeW0/d/zqLVwKD+u32wwVh+9QnL/IJ9L2HdtrWACBAJxug8nHkXpwuChTsbcIW3OHf8uaEQFB2tEXoCiSAJKhDGCGgINEs5p0H/PkcdyqsZkWd+h1oAAAAASUVORK5CYII=) !important;
-    -moz-image-region: rect(0,16px,16px,0)!important;
-    opacity: 1.0 !important;
-}
 #PanelUI-menu-button {
     margin: 0px !important;
 }
@@ -561,62 +539,6 @@ toolbarbutton {
     list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAD1BMVEU8TFw8TFw8TFwAAAA8TFwRW/cAAAAABHRSTlMQDwEA8c1HeQAAAC1JREFUeNqlzzEKAAAIAsDK/v/mhqLBIILcPHBQnPIAMwJgBVQaJLuOyRX+XwIORgPeAFHppAAAAABJRU5ErkJggg==) !important;
     -moz-image-region: rect(0,16px,16px,0)!important;
     opacity: 1.0 !important;
-}
-
-/**
-  SCROLLBAR
-*/
-
-scrollbar,
-scrollbar > slider,
-scrollbar > slider > thumb,
-scrollbar > scrollbarbutton {
-  -moz-appearance: none !important;
-}
-
-scrollbar > scrollbarbutton {
-  display: none !important;
-}
-
-scrollbar,
-scrollbar > scrollbarbutton {
-  border: none !important;
-  background: none !important;
-}
-
-scrollbar[orient="vertical"] {
-  min-width: 4px !important;
-  max-width: 4px !important;
-}
-scrollbar[orient="horizontal"] {
-  min-height: 4px !important;
-  max-height: 4px !important;
-}
-
-scrollbar[orient='horizontal'] > slider > thumb {
-  min-width: 42px !important;
-  max-height: 4px !important;
-}
-
-scrollbar[orient='vertical'] > slider > thumb {
-  min-height: 42px !important;
-  max-width: 4px !important;
-}
-
-scrollbar > slider {
-  background-color: #fff !important;
-}
-
-scrollbar > slider > thumb {
-  border: none !important;
-  background-color: #cbced7 !important;
-  border-radius: 16px !important;
-  opacity: 1 !important;
-}
-
-scrollbar > slider > thumb:hover,
-scrollbar > slider > thumb:active {
-  background-color: #9b9eaf !important;
 }
 
 /**

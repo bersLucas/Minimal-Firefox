@@ -15,8 +15,6 @@
     padding-top: 0px !important;
     background: transparent;
     -moz-appearance: -moz-win-glass;
-}
-#main-window[sizemode="normal"]{
     margin-top: -4px !important;
 }
 #main-window[sizemode="normal"] > #titlebar { margin-top: -15px !important;}

@@ -7,7 +7,7 @@ A firefox.css theme for Firefox. Tested on Waterfox 33.0.2
 <img src="https://cloud.githubusercontent.com/assets/3892772/5289007/3d99d436-7b08-11e4-8876-8a855acf3b61.png"/>
 
 <h2>After (with the +1 Visual Style for Windows7):</h2>
-<img src="https://cloud.githubusercontent.com/assets/3892772/8137190/7daf4fc2-110f-11e5-88b3-26dc912ff5ea.png"/>
+<img src="https://cloud.githubusercontent.com/assets/3892772/9837430/aaa0004e-5a0c-11e5-96e1-989cbc867b29.png"/>
 
 <h2>After (with the standard visual style and the alt .css):</h2>
 <img src="https://cloud.githubusercontent.com/assets/3892772/8137189/7d9924f4-110f-11e5-85ce-356ef81d20c5.png"/>

@@ -5,9 +5,8 @@
     background-image:none !Important;
 }
 
-#main-window{margin-top: 0px !important;}
-
-#main-window[sizemode="normal"] > #titlebar { margin-top: -15px !important;}
+#main-window[sizemode="normal"] > #titlebar { margin-top: -10px !important;}
+#main-window[sizemode="maximized"] > #titlebar { margin-top: -4px !important;}
 
 .tabs-newtab-button { 
   width: 30px !important; 
@@ -57,7 +56,7 @@ select > input {
 }
 
 tab {
-  font-family: DejaVu Sans!important;
+  font-family: Calibri!important;
   font-stretch: condensed;
   font-weight: 500;
   text-align: left !important;
@@ -216,7 +215,7 @@ toolbarbutton {
 #urlbar {
   color: rgb(98,98,98) !important;
   background: white !important;
-  font-family: DejaVu Sans !important;
+  font-family: Calibri !important;
   font-stretch: condensed;
   font-size: 11px !important;
   border: 1px solid #dcdcdc !important;

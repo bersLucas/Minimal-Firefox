@@ -1,7 +1,7 @@
 Minimal-Firefox
 ===============
 
-A firefox.css theme for Firefox. Tested on Waterfox 33.0.2
+A firefox.css theme for Firefox. Tested on Firefox 42-45
 
 <h2>Before:</h2>
 <img src="https://cloud.githubusercontent.com/assets/3892772/5289007/3d99d436-7b08-11e4-8876-8a855acf3b61.png"/>

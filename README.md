@@ -1,22 +1,26 @@
-#Minimal-Firefox
+# Minimal-Firefox
 
-A firefox.css theme for Firefox. Tested on Firefox 42-45
+A firefox.css theme for Firefox. Tested on Firefox 42-54
 
-##Windows
-###Before
+**!This theme will not work on versions above 55!**
+
+## Windows
+### Before
+
 <img src="https://cloud.githubusercontent.com/assets/3892772/5289007/3d99d436-7b08-11e4-8876-8a855acf3b61.png"/>
 
-###After
+### After
+
 <img src="https://cloud.githubusercontent.com/assets/3892772/8137189/7d9924f4-110f-11e5-85ce-356ef81d20c5.png"/>
 
-###After (with the +1 Visual Style for Windows7)
+### After (with the +1 Visual Style for Windows7)
 <img src="https://cloud.githubusercontent.com/assets/3892772/9837430/aaa0004e-5a0c-11e5-96e1-989cbc867b29.png"/>
 
-##Mac
-###Before
+## Mac
+### Before
 ![screen shot 2016-11-15 at 2 25 16 pm](https://cloud.githubusercontent.com/assets/3892772/20320588/525af764-ab40-11e6-81e3-459a288a17b4.png)
 
-###After
+### After
 ![screen shot 2016-11-15 at 2 25 27 pm](https://cloud.githubusercontent.com/assets/3892772/20320589/52616bf8-ab40-11e6-8862-e87cd6489087.png)
 
 
